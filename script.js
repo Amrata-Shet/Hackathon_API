@@ -15,6 +15,7 @@ container.append(header);
 container.append(image);
 document.body.append(container);
 
+//Build html elements for displaying the results
 let render=document.createElement('div');
 render.setAttribute('class','main-container');
 render.setAttribute('id','mainContainer');
@@ -25,6 +26,7 @@ char_data.setAttribute('class','char-container');
 render.append(char_data);
 document.body.append(char_data);
 
+//Fetch books data from the main URL
 const getData = async () => {
   try {
     const data = await fetch("https://www.anapioficeandfire.com/api/books");
@@ -39,6 +41,9 @@ const getData = async () => {
 };
 
 getData();
+
+
+//Display relevant data of all books
 const displayData = (obj) => {
   render.innerHTML += `
   <div class="container">
@@ -62,6 +67,7 @@ const displayData = (obj) => {
   `;
 };
 
+//Fetch characters URL from the main books URL, and fetch the characters relevant data
 async function get_char(url){
     let users;
     try {
@@ -73,6 +79,8 @@ async function get_char(url){
     display_characters(users);
   }
 
+
+//Display relevant information of characters
 const display_characters = (obj) => {
   char_data.innerHTML += `
   <div class="char_data-container">
