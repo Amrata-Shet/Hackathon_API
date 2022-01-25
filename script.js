@@ -76,6 +76,7 @@ async function get_char(url){
 const display_characters = (obj) => {
   char_data.innerHTML += `
   <div class="char_data-container">
+  <p>Book Character</p>
   <p class="info">URL:<span>${obj.url}</span></p>
   <p class="info">Name:<span>${obj.name}</span></p>
   <p class="info">Gender:<span>${obj.gender}</span></p>
