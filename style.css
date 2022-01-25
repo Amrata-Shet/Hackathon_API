@@ -21,7 +21,7 @@ body {
     background: linear-gradient(to right, #3262ff 0%, #42ff1c 51%, #da1eba 100%);
   }
   
-  .container {
+  .container,.char-container {
     background: yellow;
     padding: 10px;
     border-radius: 15px;
