@@ -11,7 +11,7 @@ body {
     background: linear-gradient(to right, #f6d365 0%, #fda085 51%, #da1eba 100%);
   }
   
-  .main-container {
+  .main-container,.char-container {
     display: flex;
     flex-flow: row wrap; 
     justify-content: center;
@@ -21,7 +21,7 @@ body {
     background: linear-gradient(to right, #3262ff 0%, #42ff1c 51%, #da1eba 100%);
   }
   
-  .container,.char-container {
+  .container,.char_data-container {
     background: yellow;
     padding: 10px;
     border-radius: 15px;
