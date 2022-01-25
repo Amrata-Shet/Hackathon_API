@@ -50,7 +50,7 @@ const displayData = (obj) => {
   <h3 class="info">Book Name:<span>${obj.name}</span></h3>
   <p class="info">Book Isbn:<span>${obj.isbn}</span></p>
   <p class="info">Book Number of Pages:<span>${obj.numberOfPages}</span></p>
-  <p class="info">Book Authors:<span>${obj.authors}</span></p>
+  <p class="info">Book Authors:<span>${obj.authors.join(",")}</span></p>
   <p class="info">Book Publisher Name:<span>${obj.publisher}</span></p>
   <p class="info">Book Released Date:<span>${obj.released}</span></p>
   <p class="info">Book Character 1:<span>${obj.characters[0]}</span></p>
